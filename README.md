@@ -24,7 +24,8 @@ I used  small data for image classification.
 (1) MLP  
 ![](images/4.png)  
 
-(2) gMLP
+(2) gMLP  
+
 ![](images/5.png)
 
 ### 5.Improvement Requirement  
