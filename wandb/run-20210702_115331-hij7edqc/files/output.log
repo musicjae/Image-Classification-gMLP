@@ -1,0 +1,6 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+Traceback (most recent call last):
+  File "train.py", line 39, in <module>
+    tuner = tuner.tuning.Tuner(trainer)
+NameError: name 'tuner' is not defined

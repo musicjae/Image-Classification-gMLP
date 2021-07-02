@@ -1,0 +1,110 @@
+Traing using gMLP...
+Epoch 0:   0%|                                                                                                                                                                                                   | 0/72 [00:00<?, ?it/s]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: you defined a validation_step but have no val_dataloader. Skipping val loop
+  warnings.warn(*args, **kwargs)
+  | Name       | Type       | Params
+------------------------------------------
+0 | model      | Sequential | 2.8 M
+1 | patcher    | Conv2d     | 196 K
+2 | classifier | Linear     | 1.0 K
+------------------------------------------
+3.0 M     Trainable params
+0         Non-trainable params
+3.0 M     Total params
+11.875    Total estimated model params size (MB)
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 19:  83%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                          | 60/72 [00:29<00:05,  2.04it/s, loss=0.0684, v_num=um1n]
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: The dataloader, val dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+Epoch 19: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 72/72 [00:35<00:00,  2.05it/s, loss=0.0397, v_num=um1n]
+Validating:   0%|                                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: The dataloader, test dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+DATALOADER:0 VALIDATE RESULTS
+{'validation_loss': 2.4837026596069336}
+--------------------------------------------------------------------------------
+Testing: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:01<00:00,  5.59it/s]
+--------------------------------------------------------------------------------
+DATALOADER:0 TEST RESULTS
+{'test_loss': 2.404433250427246, 'validation_loss': 2.4837026596069336}
+--------------------------------------------------------------------------------

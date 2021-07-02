@@ -1,0 +1,1 @@
+{"format": "torch", "nodes": [{"name": "l1", "id": 140462374314720, "class_name": "Linear(in_features=196608, out_features=4, bias=True)", "parameters": [["weight", [4, 196608]], ["bias", [4]]], "output_shape": [[8, 4]], "num_parameters": [786432, 4]}], "edges": []}

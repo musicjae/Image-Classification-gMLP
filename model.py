@@ -4,6 +4,7 @@ import torch.nn as nn
 from hyperparameters import args
 from data import *
 import wandb
+from pytorch_lightning import Trainer, tuner
 from pytorch_lightning.loggers import WandbLogger
 
 wandb_logger = WandbLogger(name='Image-Classification-using-PL')
