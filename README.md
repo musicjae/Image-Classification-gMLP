@@ -11,7 +11,7 @@ gMLP는 이미지 분류, 텍스트 분류에서 기존의 Transformer 혹은 �
 ![](images/3.png)
 
 ### 3.Experiments
-I used  small data for image classification. 
+I used  small data and imbalanced data for image classification. 
 
 | Architecture | Train Loss | Test Loss |
 |-------|-------|-------|
