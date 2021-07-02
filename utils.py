@@ -32,3 +32,6 @@ inference_transforms = transforms.Compose([
                     transforms.ToTensor(),
                     transforms.Resize(size=(args.img_size, args.img_size)),
                     transforms.Normalize(mean,std)])
+
+
+decoder = {0:'비숑프리제',1:'말티즈',2:'사모예드',3:'스피츠'} ## inference에서 사용될 디코더

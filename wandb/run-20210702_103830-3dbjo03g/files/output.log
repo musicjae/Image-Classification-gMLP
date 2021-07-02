@@ -1,0 +1,10 @@
+
+Traing using basic-MLP...
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+Traceback (most recent call last):
+  File "train.py", line 49, in <module>
+    trainer.fit(basic_mlp, train_loader,validation_loader,test_loader)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 449, in fit
+    raise MisconfigurationException(
+pytorch_lightning.utilities.exceptions.MisconfigurationException: You cannot pass `train_dataloader` or `val_dataloaders` to `trainer.fit(datamodule=...)`

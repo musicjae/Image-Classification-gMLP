@@ -1,0 +1,842 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.33
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: train_loss_step
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_epoch
+      5: 1
+      6:
+      - 1
+    - 1: gradients/classifier\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/classifier\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/classifier\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/classifier\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/classifier\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/classifier\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.spatial_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.spatial_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.spatial_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.spatial_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.spatial_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.spatial_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.sgu\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.channel_proj1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.5\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.spatial_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.spatial_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.spatial_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.spatial_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.spatial_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.spatial_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.sgu\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.channel_proj1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.4\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.spatial_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.spatial_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.spatial_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.spatial_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.spatial_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.spatial_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.sgu\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.channel_proj1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.3\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.spatial_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.spatial_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.spatial_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.spatial_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.spatial_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.spatial_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.sgu\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.channel_proj1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.2\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.spatial_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.spatial_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.spatial_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.spatial_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.spatial_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.spatial_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.sgu\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.channel_proj1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.1\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.spatial_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.spatial_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.spatial_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.spatial_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.spatial_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.spatial_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.sgu\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.channel_proj1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/model\.0\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/patcher\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/patcher\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/patcher\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/patcher\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/patcher\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/patcher\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: validation_loss
+      5: 1
+      6:
+      - 1
+    - 1: test_loss
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.8
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      2:
+      - 1
+      - 5
+      - 9
+      3:
+      - 1
+      - 7
+      4: 3.8.8
+      5: 0.10.33
+      8:
+      - 5
+batch_size:
+  desc: null
+  value: 8
+epochs:
+  desc: null
+  value: 200
+eps:
+  desc: null
+  value: 1.0e-08
+img_size:
+  desc: null
+  value: 256
+lr:
+  desc: null
+  value: 0.0004
+mode:
+  desc: null
+  value: gmlp
+num_classes:
+  desc: null
+  value: 4
+total_steps:
+  desc: null
+  value: 211000

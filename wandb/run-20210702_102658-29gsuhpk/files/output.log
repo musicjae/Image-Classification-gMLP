@@ -1,0 +1,42 @@
+Traing using basic-MLP...
+Epoch 0:  28%|█████████████████████████████████████████████▌                                                                                                                      | 20/72 [00:00<00:02, 21.74it/s, loss=6.9, v_num=uhpk]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: you defined a validation_step but have no val_dataloader. Skipping val loop
+  warnings.warn(*args, **kwargs)
+  | Name | Type   | Params
+--------------------------------
+0 | l1   | Linear | 786 K
+--------------------------------
+786 K     Trainable params
+0         Non-trainable params
+786 K     Total params
+3.146     Total estimated model params size (MB)
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 19: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 72/72 [00:02<00:00, 27.74it/s, loss=1.33, v_num=uhpk]
+finished

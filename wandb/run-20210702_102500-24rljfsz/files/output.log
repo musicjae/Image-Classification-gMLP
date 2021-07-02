@@ -1,0 +1,70 @@
+Traing using basic-MLP...
+Epoch 0:   0%|                                                                                                                                                                                                   | 0/72 [00:00<?, ?it/s]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: you defined a validation_step but have no val_dataloader. Skipping val loop
+  warnings.warn(*args, **kwargs)
+  | Name | Type   | Params
+--------------------------------
+0 | l1   | Linear | 786 K
+--------------------------------
+786 K     Trainable params
+0         Non-trainable params
+786 K     Total params
+3.146     Total estimated model params size (MB)
+/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:69: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+Traceback (most recent call last):
+  File "train.py", line 49, in <module>
+    trainer.fit(basic_mlp, train_loader)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 458, in fit
+    self._run(model)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 756, in _run
+    self.dispatch()
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 797, in dispatch
+    self.accelerator.start_training(self)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 96, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 144, in start_training
+    self._results = trainer.run_stage()
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 807, in run_stage
+    return self.run_train()
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 869, in run_train
+    self.train_loop.run_training_epoch()
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 489, in run_training_epoch
+    batch_output = self.run_training_batch(batch, batch_idx, dataloader_idx)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 729, in run_training_batch
+    self.optimizer_step(optimizer, opt_idx, batch_idx, train_step_and_backward_closure)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 424, in optimizer_step
+    model_ref.optimizer_step(
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/core/lightning.py", line 1403, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/core/optimizer.py", line 214, in step
+    self.__optimizer_step(*args, closure=closure, profiler_name=profiler_name, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/core/optimizer.py", line 134, in __optimizer_step
+    trainer.accelerator.optimizer_step(optimizer, self._optimizer_idx, lambda_closure=closure, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 329, in optimizer_step
+    self.run_optimizer_step(optimizer, opt_idx, lambda_closure, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 336, in run_optimizer_step
+    self.training_type_plugin.optimizer_step(optimizer, lambda_closure=lambda_closure, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 193, in optimizer_step
+    optimizer.step(closure=lambda_closure, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/torch/optim/optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/torch/optim/adam.py", line 66, in step
+    loss = closure()
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 723, in train_step_and_backward_closure
+    result = self.training_step_and_backward(
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 812, in training_step_and_backward
+    result = self.training_step(split_batch, batch_idx, opt_idx, hiddens)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 280, in training_step
+    training_step_output = self.trainer.accelerator.training_step(args)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 204, in training_step
+    return self.training_type_plugin.training_step(*args)
+  File "/Users/jjy/opt/anaconda3/envs/jyflask/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 155, in training_step
+    return self.lightning_module.training_step(*args, **kwargs)
+  File "/Users/jjy/Desktop/development/ver 1.0/Image-Classification-gMLP/model.py", line 143, in training_step
+    wandb.log('train_loss', loss, on_epoch=True)
+TypeError: log() got an unexpected keyword argument 'on_epoch'
