@@ -52,5 +52,6 @@ $python app.py --mode=basic-mlp
 [5] Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems. 2017.  
 [6] https://machinelearningmastery.com/what-is-imbalanced-classification/
 ### My Presentation for this paper [3]
+--------------------------
 
 https://www.youtube.com/watch?v=ojHBh2bE2BY
