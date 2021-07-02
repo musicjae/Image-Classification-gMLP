@@ -5,7 +5,7 @@ import torch
 from pytorch_lightning import Trainer, tuner
 from torch.nn import functional as F
 import torch.nn as nn
-from hyperparameters import *
+from hyperparameters import args
 from data import *
 
 input_size = args.img_size
@@ -70,7 +70,7 @@ class gMLPForImageClassification(gMLP):
             lr,
         patch_size=16,
         in_channels=3,
-        num_classes=1000,
+        num_classes=args.num_classes,
         d_model=256,
         d_ffn=512,
         seq_len=256,
@@ -85,14 +85,19 @@ class gMLPForImageClassification(gMLP):
         self.classifier = nn.Linear(d_model, num_classes)
         self.lr = lr
 
-    def forward(self, x):
-        patches = self.patcher(x)
+    def forward(self, x): #8 3 256 256 when batch is 8
+        print(f'input {x.size()}')
+        patches = self.patcher(x) # 8, 256, 16, 16
         batch_size, num_channels, _, _ = patches.shape
-        patches = patches.permute(0, 2, 3, 1)
-        patches = patches.view(batch_size, -1, num_channels)
-        embedding = self.model(patches)
-        embedding = embedding.mean(dim=1)
-        out = self.classifier(embedding)
+        patches = patches.permute(0, 2, 3, 1) # 8, 16, 16, 256
+        patches = patches.view(batch_size, -1, num_channels) # 8, 256, 256
+        print(f'patches 33 {patches.size()}')
+        embedding = self.model(patches) # [8, 256, 256]
+        print(f'embedding 11 {embedding.size()}')
+        embedding = embedding.mean(dim=1) # [8, 256]
+        print(f'embedding 22 {embedding.size()}')
+        out = self.classifier(embedding) #[8, 4]
+        print(f'out: ',{out.size()})
         return out
 
     def cross_entropy_loss(self,logits,labels):
@@ -103,20 +108,29 @@ class gMLPForImageClassification(gMLP):
         x,y = batch['image'], batch['label']
         logits = self.forward(x)
         loss = self.cross_entropy_loss(logits,y)
+        self.log('train_loss', loss, on_step=True, on_epoch=True)
         return loss
+
+    def validation_step(self,batch,batch_nb):
+        x,y = batch['image'], batch['label']
+        logits = self.forward(x)
+        loss = self.cross_entropy_loss(logits,y)
+        self.log('train_loss', loss, on_step=True, on_epoch=True)
 
     def configure_optimizers(self):
         return torch.optim.Adam(self.parameters(),lr=self.lr)
 
 
 class MLP(pl.LightningModule):
-    def __init__(self,input_size, lr): # for auto_scale_batch_size
+    def __init__(self,image_size, lr): # for auto_scale_batch_size
         super(MLP,self).__init__()
-        self.l1 = torch.nn.Linear(input_size*input_size*3,5)
+        self.l1 = torch.nn.Linear(image_size*image_size*3,args.num_classes)
         self.lr = lr
 
     def forward(self,x):
+        print(x.shape)
         x = x.view(x.size(0),-1)
+        print(x.shape)
         x = self.l1(x)
         x = torch.relu(x)
         return x
@@ -136,4 +150,3 @@ class MLP(pl.LightningModule):
 
 basic_mlp = MLP(input_size,learning_rate)
 gmlp = gMLPForImageClassification(input_size,learning_rate)
-

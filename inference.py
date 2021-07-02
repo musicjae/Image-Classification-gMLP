@@ -30,7 +30,7 @@ random.seed(random_seed)
 device = torch.device('cuda' if torch.cuda.is_available() else ('cpu'))
 
 if args.mode == 'gmlp':
-    model = gMLPForImageClassification.load_from_checkpoint('lightning_logs/trained-epoch=19-val_loss=0.00-gmlp.ckpt',
+    model = gMLPForImageClassification.load_from_checkpoint('lightning_logs/trained-epoch=19-val_loss=0.00-gmlp-v1.ckpt',
                                                             map_location=device,
                                                              lr=args.lr,
                                                              image_size=args.img_size
@@ -44,12 +44,11 @@ elif args.mode == 'basic-mlp':
 
 
 model.eval()
-print(model)
-
+## sample test data
 testsp = Image.open('sample/img/000000000023.jpg')
-print('---------------original--------------',testsp.size)
-testst = inference_transforms(testsp).reshape((256,3,16,16))
-print('---------------processed--------------',testst.size())
+#print('---------------original--------------',testsp.size)
+testst = inference_transforms(testsp).unsqueeze(0)
+#print('---------------processed--------------',testst.size())
 print('---------------model--------------',model(testst))
 
 # app = Flask(__name__)

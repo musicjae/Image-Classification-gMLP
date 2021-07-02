@@ -12,6 +12,7 @@ from hyperparameters import *
 from utils import normalization_parameter
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
+from torch.utils.data import random_split
 
 """
 (1) 데이터셋 틀 만들기
@@ -40,29 +41,36 @@ class CustomDataset(Dataset):
         labels = self.labels.iloc[idx,2]
 
         image = io.imread(img_names)
-
         sample = {'image': image, 'image_name': img_names, 'label':labels}
+        try:
+            if self.transform:
+                sample = {'image':self.transform(sample['image']), 'image_name': img_names, 'label':labels}
 
-        if self.transform:
-            sample = {'image':self.transform(sample['image']), 'image_name': img_names, 'label':labels}
+        except:
+            pass
 
         return sample
 
-imageNnameDataset = CustomDataset(csv_file='sample/labels.csv',root_dir='sample/img/')
+imageNnameDataset = CustomDataset(csv_file='sample/dog-clf-labels.csv',root_dir='sample/dogs/')
 
 """
 (2) transform 적용하기
 """
 mean,std = np.array([0.34903467, 0.31960577, 0.2967486]), np.array([0.25601476, 0.2398773,  0.23781188])
-transformed_dataset = CustomDataset(csv_file='sample/labels.csv',root_dir='sample/img/',
+transformed_dataset = CustomDataset(csv_file='sample/dog-clf-labels.csv',root_dir='sample/dogs/',
                                     transform=transforms.Compose([transforms.ToPILImage(),
                                                                   transforms.ToTensor(),
                                                                   transforms.Resize(size=(args.img_size, args.img_size)),
                                                                   transforms.RandomHorizontalFlip(),
                                                                   transforms.Normalize(mean,std)
-                                                                  ])) ## 현재 모델의 목적은 동물의 색상, 크기
+                                                                  ])) ## 현재 모델의 목적은 동물의 색상, 크기. 그래서 RandomCrop과 색상 변형에 대한 기법은 사용 안함.
 
 """
 (3) DataLoader로 감싸기
 """
-train_loader = DataLoader(transformed_dataset, batch_size=args.batch_size,shuffle=True)
+length_for_random_split = [int(len(transformed_dataset)*0.8), int(len(transformed_dataset)*0.1)+1, int(len(transformed_dataset)*0.1)+1]
+train_dataset, validation_dataset, test_dataset = random_split(transformed_dataset,length_for_random_split)
+
+train_loader = DataLoader(train_dataset, batch_size=args.batch_size,shuffle=True)
+validation_loader = DataLoader(validation_dataset, batch_size=args.batch_size,shuffle=False)
+test_loader = DataLoader(test_dataset, batch_size=args.batch_size,shuffle=False)
