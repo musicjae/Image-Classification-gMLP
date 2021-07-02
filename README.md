@@ -27,10 +27,9 @@ I used  small data for image classification.
 ### 4. How to implement
 <h4>1) Install required libraries</h4>
 ``` shell 
-
 $pip install -r requirement.txt 
+``` 
 
-```
 <h4>2) run  </h4>
 
 if you want to use gMLP,
