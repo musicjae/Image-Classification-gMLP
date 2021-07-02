@@ -41,7 +41,10 @@ if you want to use basic MLP,
 ``` shell
 $python app.py --mode=basic-mlp
 ```
+7. Run
 
+- Flask for rest-api, Swagger   
+![](images/7.png)
 
 
 ### 6.References 
