@@ -25,7 +25,8 @@ I used  small data for image classification.
 현재 수집된 데이터는 Imbalanced data이다. 즉, 각 class 의 데이터 수의 분포가 매우 다르다. 따라서, Imbalaced data 문제[6]를 해소하는 추가적인 작업이 필요하다. 가능한 2 가지 방안은 이것이다: (1) 데이터를 더 수집하기, (2) 불균형 데이터 문제를 해소하는 새로운 모델을 찾아 적용하기. 
 
 ### 4. How to implement
-<h4>1) Install required libraries</h4>
+<h4>1) Install required libraries</h4> 
+
 ``` shell 
 $pip install -r requirement.txt 
 ``` 
