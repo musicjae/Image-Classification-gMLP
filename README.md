@@ -45,7 +45,7 @@ $python app.py --mode=basic-mlp
 
 
 ### References 
-[1] https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede
+[1] https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede 
 [2] https://medium.com/the-owl/imbalanced-multilabel-image-classification-using-keras-fbd8c60d7a4b  
 [3] Liu, Hanxiao, et al. "Pay Attention to MLPs." arXiv preprint arXiv:2105.08050 (2021)  
 [4] https://github.com/antonyvigouret/Pay-Attention-to-MLPs/blob/master/models.py  
